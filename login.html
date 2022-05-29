@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>member</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grape+Nuts&family=Hurricane&family=Indie+Flower&family=Inspiration&family=Josefin+Sans:wght@400;500&family=Merienda:wght@700&family=Noto+Sans+TC:wght@100;500&family=Noto+Serif+TC:wght@600&family=Roboto:wght@100&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .navbar {
+            height: 100px;
+            background-color: black;
+        }
+
+        * a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .nav-link {
+            color: #fff;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+
+        }
+
+        body {
+            background-image: linear-gradient(rgba(150, 150, 150, 0.5), rgba(150, 150, 150, 0.5)), url(https://images.pexels.com/photos/35888/amazing-beautiful-breathtaking-clouds.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+            /* background-color: #161616; */
+            background-size: 100vw 100vh;
+            background-repeat: no-repeat;
+            font-family: Microsoft JhengHei;
+
+        }
+
+        #wrapper {
+            background-color: #a4a388;
+            margin-top: 100px;
+            width: 350px;
+            height: 250px;
+            /*250*/
+            /* border-radius: 20px; */
+            border: 1px solid rgb(229, 139, 139)
+        }
+
+        header {
+            /* margin-top: 100px;  */
+            background-color: #ae5e5e;
+            padding: 10px 14px;
+        }
+
+        #content {
+
+            padding: 14px;
+        }
+
+        .form-group {
+
+            margin-bottom: 15px;
+        }
+
+        input.form-control {
+            display: block;
+            width: 100%;
+            height: 33px;
+            font-size: 15px;
+            color: #575252;
+            background-color: #a4a388;
+            border: 1px solid #9f8e39;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        .btn {
+            /* display: rgb(85, 3, 249); */
+            width: 100%;
+            color: #94815e;
+            /*ffffff*/
+            background-color: #9a5650;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 3px;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        #wrapper {
+            width: 350px;
+            height: 305px;
+            border-radius: 3px;
+            border: 1px solid rgb(64, 2, 249);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -125px;
+            margin-left: -175px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top table-light ">
+        <div class="container">
+            <div class="col-2 ">
+                <a class="navbar-brand " href="index.html">DYSON</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center " id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="index.html">首頁</a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product1.html">吸塵器</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product2.html">空氣清淨機</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product3.html">吹風機</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="nav-item d-flex justify-content-between">
+
+                        <a class="m-3" onclick="customizeWindowEvent()"><i
+                                class="fa-regular fa-circle-question"></i></a>
+                        <a class="m-3" href="./login.html"><i class="fa-solid fa-user-large"></i></a>
+                        <a class="m-3" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="wrapper">
+        <header>
+            <p>請登入</p>
+        </header>
+        <div="content">
+            <form>
+                <div class="form-group">
+                    <input class="form-control" placeholder="E-mail" name="email" type="email">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="Password" name="password" type="password">
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="remember" type="checkbox">記住我
+                    </label>
+                </div>
+                <button type="submit" class="btn">登入</button>
+                <button type="submit" class="btn">註冊</button>
+            </form>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
